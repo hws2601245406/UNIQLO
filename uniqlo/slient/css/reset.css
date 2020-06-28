@@ -3,6 +3,9 @@
 *{
     padding: 0;
     margin: 0;
+    list-style: none;
+    border: 0;
+    box-sizing: border-box;
 
 }
 h1,h2,h3,h4,h5,h6{
@@ -27,3 +30,8 @@ ul,ol,li{
 input{
     outline: none;
 }
+.clearfix:after {
+    content:""; 
+    display: block; 
+    clear:both; 
+ }
