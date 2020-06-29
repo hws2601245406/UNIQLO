@@ -62,6 +62,18 @@
     font-size: inherit;
     outline: none;
 }
+/* title */
+.title{
+    font-size: 16px;
+    text-indent: 6px;
+    background-color: #f4f4f4;
+}
+ .title h2{
+    font-size: 24px;
+    margin: 0;
+    line-height: 60px;
+    font-weight: 400 !important;
+}
 /* header */
 .hd{
     margin-bottom: 28px;
@@ -199,6 +211,7 @@
 .right_nav a:hover{
     color: red;
 }
+/* footer */
 .footer_nav{
     height: 50px;
 

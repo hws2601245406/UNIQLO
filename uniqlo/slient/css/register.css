@@ -13,17 +13,7 @@ a{
 .form_wrap{
     position: relative;
 }
-.form_wrap .title{
-    font-size: 16px;
-    text-indent: 6px;
-    background-color: #f4f4f4;
-}
-.form_wrap .title h2{
-    font-size: 24px;
-    margin: 0;
-    line-height: 60px;
-    font-weight: 400 !important;
-}
+
 .form_content{
     margin: 20px auto;
     padding: 20px 400px;   
