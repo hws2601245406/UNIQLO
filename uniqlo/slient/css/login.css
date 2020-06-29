@@ -119,3 +119,14 @@ body{
     display: inline-block;
 
 }
+.inputAC{
+    border-color: #28788c;
+
+}
+.error_msg{
+    color: red;
+    height: 10px;
+}
+.form-group-error{
+    border-color: red;
+}

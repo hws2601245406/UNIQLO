@@ -150,3 +150,8 @@ a{
     border-color: #1b1b1b;
     background-color: #1b1b1b;
 }
+#registerbtn{
+    text-align: center;
+    line-height: 52px;
+    
+}
