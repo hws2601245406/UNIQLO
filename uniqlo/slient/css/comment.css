@@ -1,4 +1,8 @@
 @charset "uft-8";
+a{
+    color: inherit;
+    text-decoration: none;
+}
 .wrap{
     width: 1280px;
     margin-right: auto;

@@ -1,0 +1,8 @@
+@charset "utf-8";
+.notice{
+    height: 50px;
+    background: red;
+}
+.marbtm{
+    margin-bottom: 20px;
+}
