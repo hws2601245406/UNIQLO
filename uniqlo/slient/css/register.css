@@ -155,3 +155,6 @@ a{
     line-height: 52px;
     
 }
+.error_msg{
+    color: red;
+}

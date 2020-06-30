@@ -11,6 +11,7 @@ a{
 /* 悬浮栏 */
 .fix_wrap{
     width: 100%;
+    position: relative;
 }
 .fix_wrap ul{
     line-height: 40px;
@@ -272,3 +273,192 @@ a{
     float: right;
 }
 
+.recommended-words{
+    padding-top: 9px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.recommended-words-title{
+    color: #1b1b1b;
+    line-height: 18px;
+    font-family: LTMedium;
+}
+.recommended-words li {
+    border: 1px solid #ababab;
+    margin-top: 10px;
+    margin-right: 10px;
+    line-height: 24px;
+    padding: 0 10px;
+    float: left;
+    cursor: pointer;
+}
+.share-overlay{
+    display: block;
+    transition: all .3s;
+    opacity: 1;
+    width: 325px;
+    height: 235px;
+    visibility: hidden;
+    background-color: #fff;
+    position: absolute;
+    top: 36px;
+    left: 18px;
+    border: 1px solid #e6e6e6;
+    color: #000;
+    font-size: 12px;
+    z-index: 2001 !important;
+}
+.div-box-left{
+    padding-left: 15px;
+    margin-top: 15px;
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+.div-box-left img{
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+}
+.span-height{
+    display: block;
+    line-height: 30px;
+}
+.div-box-right{
+    padding-right: 15px;
+    margin-top: 15px;
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+.div-box-right>img {
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+}
+.span-height {
+    display: block;
+    line-height: 30px;
+}   
+.nav-mask-cover{
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 1999;
+}
+.main_nav_list{
+    position: absolute;
+    width: 1280px;
+    z-index: 2000;
+    letter-spacing: 1px;
+    display: none;
+}
+.women_list,.men_list,.kids_list,.baby_list{
+    height: 570px;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    background: #fff;
+    border: 1px solid black;
+}
+.listright{
+    height: 100%;
+    width: 25%;
+    float: right;
+    border-left: 1px solid #ccc;
+}
+.listleft{
+    height: 100%;
+    width: 75%;
+    float: left;
+}
+.list_part{
+    height: 33%;
+    padding: 5px 0 10px;
+    width: 33.3%;
+    float: left;
+}
+.list_part dt{
+    width: 280px;
+    padding: 5px 0;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+}
+.list_part li{
+    margin: 13px 0 0 0;
+    font-size: 12px;
+    cursor: pointer;
+    border-right: 1px dashed #ccc;
+    width: 49%;
+    display: inline-block;
+    color: #8D8D8D;
+}
+.list_part li:hover{
+    color: red;
+    text-decoration: underline;
+}
+.up_part{
+    height: 40%;
+    width: 100%;
+    display: inline-block;
+    margin-top: 5px;
+}
+.bottom_part{
+    height: 60%;
+    width: 100%;
+    display: inline-block;
+}
+.up_part ul{
+    width: 100%;
+    display: inline-block;
+    padding: 0 35px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.up_part ul li{
+    width: 100%;
+    text-align: left;
+    line-height: 1.8;
+    cursor: pointer;
+    color: #000;
+}
+.up_part ul li a{
+    display: inline-block;
+    position: relative;
+}
+.part-title{
+    width: 100%;
+    display: inline-block;
+    padding: 0 35px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.bottom_part ul{
+    width: 100%;
+    display: inline-block;
+    padding: 0 35px;
+    font-size: 13px;
+}
+.bottom_part ul li{
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+}
+.title-bottom{
+    padding: 0 35px;
+}
+.title-bottom p {
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: bold;
+    letter-spacing: 0;
+}
