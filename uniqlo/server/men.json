@@ -1,0 +1,214 @@
+[
+    {
+        "title": "外套&针织衫",
+        "list": [
+            {
+                "txt": "外套",
+                "class": "new"
+            },
+            {
+                "txt": "茄克·大衣",
+                "class": "new"
+            },
+            {
+                "txt": "抗UV外套",
+                "class": "new"
+            },
+            {
+                "txt": "针织衫",
+                "class": ""
+            }
+        ]
+    },
+    {
+        "title": "裤装",
+        "list": [
+            {
+                "txt": "无褶长裤·卡其裤",
+                "class": "new"
+            },
+            {
+                "txt": "九分裤·七分裤",
+                "class": "new"
+            },
+            {
+                "txt": "牛仔裤",
+                "class": ""
+            },
+            {
+                "txt": "束脚裤",
+                "class": "hot"
+            },
+            {
+                "txt": "中裤·短裤",
+                "class": "hot"
+            }
+        ]
+    },
+    {
+        "title": "运动衫&运动裤",
+        "list": [
+            {
+                "txt": "运动衫",
+                "class": "new"
+            },
+            {
+                "txt": "运动裤",
+                "class": "hot"
+            },
+            {
+                "txt": "运动功能系列",
+                "class": "new"
+            },
+            {
+                "txt": "费德勒同款",
+                "class": ""
+            }
+        ]
+    },
+    {
+        "title": "衬衫",
+        "list": [
+            {
+                "txt": "休闲衬衫",
+                "class": "new"
+            },
+            {
+                "txt": "商务衬衫",
+                "class": "new"
+            },
+            {
+                "txt": "麻系列",
+                "class": ""
+            },
+            {
+                "txt": "高性能防皱",
+                "class": "new"
+            },
+            {
+                "txt": "牛仔衬衫",
+                "class": ""
+            },
+            {
+                "txt": "快干易打理",
+                "class": ""
+            },
+            {
+                "txt": "优质长绒棉",
+                "class": "new"
+            },
+            {
+                "txt": "精纺府绸系列",
+                "class": ""
+            },
+            {
+                "txt": "牛津纺衬衫",
+                "class": "new"
+            },
+            {
+                "txt": "合身选衬衫",
+                "class": ""
+            }
+        ]
+    },
+    {
+        "title": "T恤&背心",
+        "list": [
+            {
+                "txt": "UT系列",
+                "class": "new"
+            },
+            {
+                "txt": "POLO衫",
+                "class": "hot"
+            },
+            {
+                "txt": "短袖T恤",
+                "class": ""
+            },
+            {
+                "txt": "运动T恤",
+                "class": "hot"
+            },
+            {
+                "txt": "袋装T恤",
+                "class": ""
+            },
+            {
+                "txt": "背心",
+                "class": ""
+            },
+            {
+                "txt": "全棉T恤",
+                "class": ""
+            },
+            {
+                "txt": "长袖T恤",
+                "class": "new"
+            }
+        ]
+    },
+    {
+        "title": "亲子装",
+        "list": [
+            {
+                "txt": "亲子装",
+                "class": ""
+            }
+        ]
+    },
+    {
+        "title": "内衣&内裤&袜子",
+        "list": [
+            {
+                "txt": "AIRism系列",
+                "class": "hot"
+            },
+            {
+                "txt": "内衣",
+                "class": "hot"
+            },
+            {
+                "txt": "AIRism网眼系列",
+                "class": ""
+            },
+            {
+                "txt": "内裤",
+                "class": "new"
+            },
+            {
+                "txt": "HEATTECH系列",
+                "class": ""
+            },
+            {
+                "txt": "袜子",
+                "class": "new"
+            }
+        ]
+    },
+    {
+        "title": "起居服&配件",
+        "list": [
+            {
+                "txt": "起居系列",
+                "class": "hot"
+            },
+            {
+                "txt": "起居套装",
+                "class": ""
+            },
+            {
+                "txt": "起居裤",
+                "class": ""
+            },
+            {
+                "txt": "配件",
+                "class": "new"
+            },
+            {
+                "txt": "腰带",
+                "class": "new"
+            }
+        ]
+    }
+]

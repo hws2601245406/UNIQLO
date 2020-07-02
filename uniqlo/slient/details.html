@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/comment.css">
+    <link rel="stylesheet" href="details.scss">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <!-- 悬挂 -->
+    <div class="wrap">
+        <div class="fix_wrap">
+            <ul>
+                <li>
+                    <a id="regli" href="./register.html">注册</a>
+                </li>
+                <li class="spliter"></li>
+                <li>
+                    <a id="logli" href="./login.html">登录</a>
+                </li>
+                <li class="spliter"></li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-geren"></i>
+                        <span>账户</span>
+                    </a>
+                </li>
+                <li class="spliter"></li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-aixin"></i>
+                        <span>收藏夹</span>
+                    </a>
+                </li>
+                <li class="spliter"></li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-gouwucheman"></i>
+                        <span>购物车</span>
+                        <i class="iconfont icon-weibiaoti35"></i>
+                    </a>
+                </li>
+                <li class="spliter"></li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-youjian"></i>
+                        <span>站内信</span>
+                    </a>
+                </li>
+                <li class="spliter"></li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-V"></i>
+                        <span>联系客服</span>
+                    </a>
+                </li>
+                <li class="spliter"></li>
+                <li class="appDown">
+                    <div style="position: relative;">
+                        <a href="#">
+                            <i class="iconfont icon-mendian"></i>
+                            <span>门店购买</span>
+                        </a>
+                        <div class="share-overlay"><span>门店急送等服务仅支持手机端购买，欢迎扫码体验！</span>
+                            <div class="div-box-left"><img class="left-image" src="./img/app-download.png"><span
+                                    class="span-height">优衣库APP下载</span></div>
+                            <div class="div-box-right"><img class="right-image" src="./img/wx-download.png"><span
+                                    class="span-height">优衣库小程序登录</span></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="spliter"></li>
+                <li>
+                    <div class="h-text-box search_box">
+                        <i class="iconfont icon-sousuo"></i>
+                        <input type="text" placeholder="站内搜索">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="popup_container" style="position: absolute;top: 0;left:0;z-index: 99999;">
+            <!-- 插入 -->
+            <!-- <div class="popup" style="background-color: #ffffff;
+            position: absolute;left: 1139.6px; top: 34.0375px;">
+                <div class="h_text_box" style="width: 250px;">
+                <div class="recommended-words">
+                    <div class="recommended-words-title">热门搜索</div>
+                    <ul><li class="">防晒衣</li><li class="">哆啦A梦合作系列</li><li class="">无钢圈文胸</li><li class="">短袖T恤</li><li class="">AIRism舒爽内衣系列</li><li class="">内裤</li><li class="">夏季裤装</li><li class="">连衣裙</li><li class="">UT系列</li><li class="">亲子装</li></ul>
+                </div>
+                </div>
+        </div> -->
+        </div>
+    </div>
+    <!-- //返回顶部按钮 -->
+    <div class="toTop">
+    </div>
+    <!-- 头部 -->
+    <header class="hd">
+        <div class="nav_wrap wrap">
+            <div class="main_nav clearfix">
+                <ul class="left_nav">
+                    <li class="nav-logo"> <a href="index.html" target="_blank"> <img alt="" loading="true"
+                                src="https://www.uniqlo.cn/public/Image/L1/nav/nav-logo/LOGO.gif">
+                        </a> </li>
+                    <li class="nav-women"><a href="javascript:;">女 装 WOMEN</a> </li>
+                    <li class="nav-men"><a href="javascript:;">男 装 MEN</a> </li>
+                    <li class="nav-kids"><a href="javascript:;">童 装 KIDS</a> </li>
+                    <li class="nav-baby"><a href="javascript:;">婴 幼 儿 装 BABY</a> </li>
+                </ul>
+                <ul class="right_nav clearfix">
+                    <li class="nav-guide"><a href="/Shopping_Guide.html" target="_blank">网上购买指南</a> </li>
+                    <li class="nav-about"><a href="javascript:;">关注我们</a> </li>
+                    <li class="nav-announcement"><a href="/notice.html" target="_blank">公告区</a> </li>
+                    <li class="nav-shoplist"><a href="/shop/shop_list.html" target="_blank">店铺资料</a> </li>
+                </ul>
+
+            </div>
+            <div class="main_nav_list">
+                <div class="women_list">
+
+                    <div class="listleft">
+                        <!-- 插入数据 -->
+                        <!-- <div class="list_part">
+                            <dt>数据</dt>
+                            <li>数据</li>
+                            </div> -->
+                    </div>
+                    <div class="listright">
+                        <div class="up_part">
+                            <ul>
+                                <li><a class="new new_pro_women">新作商品</a></li>
+                                <li><a class=" timelimit_women hot">限时特优</a></li>
+                                <li><a class="new" href="https://www.uniqlo.cn/special_sizes.html"
+                                        target="_blank">特大/特小尺码</a></li>
+                                <!--        		<li><a href="https://www.uniqlo.cn/c/1292471261.html" target="_blank">超值精选</a></li>-->
+                                <li><a href="https://www.uniqlo.cn/super-u.html#vz" target="_blank">超U惠专区</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="https://www.uniqlo.cn/ut_top.html" target="_blank">UT特辑</a></li>
+                                <li><a class="" href="https://www.uniqlo.cn/specialcollection.html#cs"
+                                        target="_blank">合作系列</a></li>
+
+                                <li><a href="https://www.uniqlo.cn#information" target="_blank" class="blfwg">便利购物服务</a>
+                                </li>
+                                <li><a href="https://www.uniqlo.com/cn/news/" target="_blank">Today's Pick Up</a></li>
+                            </ul>
+                        </div>
+                        <div class="bottom_part">
+                            <div class="part-title">特辑推荐</div>
+                            <ul>
+                                <li>
+                                    <a href="https://www.uniqlo.cn/Fugl-Meyer_WOMEN.html" target="_blank">
+                                        <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/women/WTJ-1.jpg"
+                                            alt="">
+                                        <p>运动功能系列</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.uniqlo.cn/women_jeans_special.html" target="_blank">
+                                        <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/women/WTJ-2.jpg"
+                                            alt="">
+                                        <p>牛仔裤特辑</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.uniqlo.cn/linen_series.html" target="_blank">
+                                        <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/women/WTJ-3.jpg"
+                                            alt="">
+                                        <p>麻系列特辑</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.uniqlo.cn/bra_in_one_special.html" target="_blank">
+                                        <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/women/WTJ-4.jpg"
+                                            alt="">
+                                        <p>舒美衣特辑</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="title-bottom">
+                                <p><a href="https://www.uniqlo.cn/specialcollection.html#Special-Collection"
+                                        target="_blank">点击查看更多特辑</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="men_list">
+                    <div class="listleft">
+                        <!-- 插入数据 -->
+                        <!-- <div class="list_part">
+                                <dt>数据</dt>
+                                <li>数据</li> -->
+                    </div>
+                    <div class="listright">
+                        <div class="up_part">
+                            <ul>
+                                <li><a class="new new_pro_women">新作商品</a></li>
+                                <li><a class=" timelimit_women hot">限时特优</a></li>
+                                <li><a class="new" href="https://www.uniqlo.cn/special_sizes.html"
+                                        target="_blank">特大/特小尺码</a></li>
+                                <!--        		<li><a href="https://www.uniqlo.cn/c/1292471261.html" target="_blank">超值精选</a></li>-->
+                                <li><a href="https://www.uniqlo.cn/super-u.html#vz" target="_blank">超U惠专区</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="https://www.uniqlo.cn/ut_top.html" target="_blank">UT特辑</a></li>
+                                <li><a class="" href="https://www.uniqlo.cn/specialcollection.html#cs"
+                                        target="_blank">合作系列</a></li>
+
+                                <li><a href="https://www.uniqlo.cn#information" target="_blank" class="blfwg">便利购物服务</a>
+                                </li>
+                                <li><a href="https://www.uniqlo.com/cn/news/" target="_blank">Today's Pick Up</a></li>
+                            </ul>
+                        </div>
+                        <div class="bottom_part">
+                            <div class="part-title">特辑推荐</div>
+                            <ul>
+                                <li>
+                                    <a href="https://www.uniqlo.cn/Fugl-Meyer_WOMEN.html" target="_blank">
+                                        <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/men/MTJ-1.jpg"
+                                            alt="">
+                                        <p>防紫外线特辑</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.uniqlo.cn/women_jeans_special.html" target="_blank">
+                                        <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/men/MTJ-2.jpg"
+                                            alt="">
+                                        <p>运动功能系列</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.uniqlo.cn/linen_series.html" target="_blank">
+                                        <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/men/MTJ-5.jpg"
+                                            alt="">
+                                        <p>T恤特辑</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.uniqlo.cn/bra_in_one_special.html" target="_blank">
+                                        <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/men/MTJ-4.jpg"
+                                            alt="">
+                                        <p>AIRism系列</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="title-bottom">
+                                <p><a href="https://www.uniqlo.cn/specialcollection.html#Special-Collection"
+                                        target="_blank">点击查看更多特辑</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kids_list">
+                    <div class="listleft">
+                        <!-- 插入数据 -->
+                        <!-- <div class="list_part">
+                                    <dt>数据</dt>
+                                    <li>数据</li> -->
+                    </div>
+                    <div class="listright">
+                        <div class="up_part">
+                            <ul>
+                                <li><a class="new new_pro_women">新作商品</a></li>
+                                <li><a class=" timelimit_women hot">限时特优</a></li>
+                                <li><a class="new" href="https://www.uniqlo.cn/special_sizes.html"
+                                        target="_blank">特大/特小尺码</a></li>
+                                <!--        		<li><a href="https://www.uniqlo.cn/c/1292471261.html" target="_blank">超值精选</a></li>-->
+                                <li><a href="https://www.uniqlo.cn/super-u.html#vz" target="_blank">超U惠专区</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="https://www.uniqlo.cn/ut_top.html" target="_blank">UT特辑</a></li>
+                                <li><a class="" href="https://www.uniqlo.cn/specialcollection.html#cs"
+                                        target="_blank">合作系列</a></li>
+
+                                <li><a href="https://www.uniqlo.cn#information" target="_blank" class="blfwg">便利购物服务</a>
+                                </li>
+                                <li><a href="https://www.uniqlo.com/cn/news/" target="_blank">Today's Pick Up</a></li>
+                            </ul>
+                        </div>
+                        <div class="bottom_part">
+                            <div class="part-title">特辑推荐</div>
+                            <ul>
+                                <li>
+                                    <a href="https://www.uniqlo.cn/Fugl-Meyer_WOMEN.html" target="_blank">
+                                        <img src="https://img.alicdn.com/imgextra/i1/196993935/O1CN01Co9RcQ1ewH6plNmZU_!!196993935.jpg"
+                                            alt="">
+                                        <p>优衣库生活运动系列</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.uniqlo.cn/women_jeans_special.html" target="_blank">
+                                        <img src="https://img.alicdn.com/imgextra/i4/196993935/O1CN01UyhiHj1ewH7NjmLTz_!!196993935.jpg"
+                                            alt="">
+                                        <p>牛仔裤特辑</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.uniqlo.cn/bra_in_one_special.html" target="_blank">
+                                        <img src="https://img.alicdn.com/imgextra/i3/196993935/O1CN01Ql9Q6n1ewH6gnLNbv_!!196993935.jpg"
+                                            alt="">
+                                        <p>防紫外线特辑</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.uniqlo.cn/linen_series.html" target="_blank">
+                                        <img src="https://img.alicdn.com/imgextra/i4/196993935/O1CN01bssnyR1ewH6Rqfzb2_!!196993935.jpg"
+                                            alt="">
+                                        <p>童装裤装特辑</p>
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <div class="title-bottom">
+                                <p><a href="https://www.uniqlo.cn/specialcollection.html#Special-Collection"
+                                        target="_blank">点击查看更多特辑</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="baby_list">
+                    <div class="listleft">
+                        <!-- 插入数据 -->
+                        <!-- <div class="list_part">
+                                        <dt>数据</dt>
+                                        <li>数据</li> -->
+                    </div>
+                    <div class="listright">
+                        <div class="up_part">
+                            <ul>
+                                <li><a class="new new_pro_women">新作商品</a></li>
+                                <li><a class=" timelimit_women hot">限时特优</a></li>
+                                <li><a class="new" href="https://www.uniqlo.cn/special_sizes.html"
+                                        target="_blank">特大/特小尺码</a></li>
+                                <!--        		<li><a href="https://www.uniqlo.cn/c/1292471261.html" target="_blank">超值精选</a></li>-->
+                                <li><a href="https://www.uniqlo.cn/super-u.html#vz" target="_blank">超U惠专区</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="https://www.uniqlo.cn/ut_top.html" target="_blank">UT特辑</a></li>
+                                <li><a class="" href="https://www.uniqlo.cn/specialcollection.html#cs"
+                                        target="_blank">合作系列</a></li>
+
+                                <li><a href="https://www.uniqlo.cn#information" target="_blank" class="blfwg">便利购物服务</a>
+                                </li>
+                                <li><a href="https://www.uniqlo.com/cn/news/" target="_blank">Today's Pick Up</a></li>
+                            </ul>
+                        </div>
+                        <div class="bottom_part">
+                            <div class="part-title">特辑推荐</div>
+                            <ul>
+                                <li>
+                                    <a href="https://www.uniqlo.cn/Fugl-Meyer_WOMEN.html" target="_blank">
+                                        <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/baby/BTJ-6.jpg"
+                                            alt="">
+                                        <p>新生儿服饰特辑</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.uniqlo.cn/women_jeans_special.html" target="_blank">
+                                        <img src="https://img.alicdn.com/imgextra/i4/196993935/O1CN01LAsKX01ewH6ivoyV0_!!196993935.jpg"
+                                            alt="">
+                                        <p>婴幼儿夏秋系列</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.uniqlo.cn/linen_series.html" target="_blank">
+                                        <img src="https://img.alicdn.com/imgextra/i2/196993935/O1CN019jzBPS1ewH7i9xUgN_!!196993935.jpg"
+                                            alt="">
+                                        <p>婴幼儿外套</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.uniqlo.cn/bra_in_one_special.html" target="_blank">
+                                        <img src="https://img.alicdn.com/imgextra/i2/196993935/O1CN01lMPusQ1ewH7kd98uN_!!196993935.jpg"
+                                            alt="">
+                                        <p>BABY AIRism</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="title-bottom">
+                                <p><a href="https://www.uniqlo.cn/specialcollection.html#Special-Collection"
+                                        target="_blank">点击查看更多特辑</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-mask-cover" style="display: none;"></div>
+        </div>
+    </header>
+
+    <div class="wrap .Content">
+        <div class="h-cow clearfix">
+            <div class="img_list">
+                <div class="h-col" style="width: 80px;">
+                    <div class="picture-viewer-scroll" style="width: 80px;"><button disabled=""></button>
+                        <div class="picture-viewer-scroll-content" style="height: 448px; width: 88px;">
+                            <ul style="top: 0px;">
+                                <li class="" style="margin-bottom: 10px; width: 80px; height: 80px;"><img
+                                        src="https://www.uniqlo.cn/hmall/test/u0000000015581/main/first/1000/1.jpg">
+                                </li>
+                                <li class="selected" style="margin-bottom: 10px; width: 80px; height: 80px;"><img
+                                        src="https://www.uniqlo.cn/hmall/test/u0000000015581/main/other1/1000/2.jpg">
+                                </li>
+                                <li class="" style="margin-bottom: 10px; width: 80px; height: 80px;"><img
+                                        src="https://www.uniqlo.cn/hmall/test/u0000000015581/main/other2/1000/3.jpg">
+                                </li>
+                                <li class="" style="margin-bottom: 10px; width: 80px; height: 80px;"><img
+                                        src="https://www.uniqlo.cn/hmall/test/u0000000015581/main/other3/1000/4.jpg">
+                                </li>
+                                <li class="" style="margin-bottom: 10px; width: 80px; height: 80px;"><img
+                                        src="https://www.uniqlo.cn/hmall/test/u0000000015581/main/other4/1000/5.jpg">
+                                </li>
+                            </ul>
+                        </div><button disabled=""></button>
+                    </div>
+                </div>
+                <div class="h-col picture-viewer-pre"></div>
+                <div class="h-col" style="width: 500px;"></div>
+                <div class="h-col picture-viewer-next"></div>
+            </div>
+            <div class="detail_list"></div>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer class="wrap">
+        <div class="footer_nav">
+            <div class="footer_logo">
+                <a href="" rel="nofollow" target="_blank"><img
+                        data-src="https://www.uniqlo.cn/public/Image/L1/footer/footer_logo.gif" alt="logo"
+                        loading="true" src="https://www.uniqlo.cn/public/Image/L1/footer/footer_logo.gif"></a>
+            </div>
+            <ul class="footer_list">
+                <li><a href="/shop/shop_list.html" target="_blank">店铺资料</a></li>
+                <li><a href="http://event.uniqlo.cn/hrchina/recruitment/" rel="nofollow" target="_blank">招聘信息</a>
+                </li>
+                <li><a href="javascript:;">访问权限</a></li>
+                <li><a href="/privacy_policy.html" target="_blank">隐私权保护</a></li>
+            </ul>
+        </div>
+        <div id="u-footer-webrecords" class="clearfix" style="margin-top:20px">
+            <div class="textrecord">
+                <span><a href="http://www.beian.miit.gov.cn" rel="nofollow" target="_blank">迅销（中国）商贸有限公司
+                        沪ICP备09003223号</a></span>
+                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402000957" rel="nofollow"
+                    target="_blank"><img data-src="https://www.uniqlo.cn/public/Image/L1/footer/national.png" alt=""
+                        loading="true" src="https://www.uniqlo.cn/public/Image/L1/footer/national.png">沪公网安备
+                    31010402000957号</a>
+            </div>
+            <div class="imgrecord">
+                <a href="http://wap.scjgj.sh.gov.cn/businessCheck/verifKey.do?showType=extShow&amp;serial=9031000020160416211335000000603916-SAIC_SHOW_310000-gs20140504000004634836&amp;signData=MEQCIBtgMvRr2kOvahZQkDNOmubeqABdENn0cQmGuQ4gXhmQAiBlnze1/tnLhyTRU0mBNuJWr75IkE29OhJnBlesv55DmQ=="
+                    rel="nofollow" target="_blank"><img
+                        data-src="https://www.uniqlo.cn/public/Image/L1/footer/record_1.gif" height="23" loading="true"
+                        src="https://www.uniqlo.cn/public/Image/L1/footer/record_1.gif"></a>
+                <img data-src="https://www.uniqlo.cn/cms/ae70496c8d3e7e510f422c7a8c54b860.png" style="width:100px"
+                    loading="true" src="https://www.uniqlo.cn/cms/ae70496c8d3e7e510f422c7a8c54b860.png">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

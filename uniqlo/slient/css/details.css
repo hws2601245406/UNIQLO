@@ -1,0 +1,60 @@
+@charset "UTF-8";
+.Content {
+  position: relative;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.Content .img_list {
+  width: 690px;
+  float: left;
+}
+
+.Content .img_list button {
+  opacity: .32;
+  cursor: default;
+  border: none;
+  height: 26px;
+  width: 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-image: url(../img/白色箭头.png);
+}
+
+.Content .img_list .picture-viewer-scroll-content {
+  padding: 4px;
+  margin-left: -4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.Content .img_list .picture-viewer-scroll-content ul {
+  position: relative;
+  top: 0;
+  transition: top .2s;
+}
+
+.Content .img_list .picture-viewer-scroll-content ul .selected::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  bottom: -4px;
+  right: -4px;
+  border: 2px solid #1b1b1b;
+}
+
+.Content .img_list .picture-viewer-scroll-content ul li {
+  position: relative;
+}
+
+.Content .detail_list {
+  margin-left: 690px;
+  float: none;
+}
+
+.h-col {
+  float: left;
+}
