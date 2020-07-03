@@ -24,14 +24,14 @@ $(() => {
 
             $(".left_list ul").html(html)
             $(".left_list_s i").click(function () {
-                if($(this).siblings("ul").css("display") == "none"){
-                   $(this).css({"backgroundImage": "url(img/下三角.png)"})
-                   $(this).siblings("ul").css("display","block")  
-                }else{
-                    $(this).css({"backgroundImage": "url(img/右三角.png)"})
-                   $(this).siblings("ul").css("display","none")  
+                if ($(this).siblings("ul").css("display") == "none") {
+                    $(this).css({ "backgroundImage": "url(img/下三角.png)" })
+                    $(this).siblings("ul").css("display", "block")
+                } else {
+                    $(this).css({ "backgroundImage": "url(img/右三角.png)" })
+                    $(this).siblings("ul").css("display", "none")
                 }
-               
+
             })
 
 
@@ -39,18 +39,15 @@ $(() => {
 
     );
     // 右边商品列表
-        $.ajax({
-            url:"../server/getlist.php",
-            dataType:"json"
-        }).done(data => {
-            
-            
-            let html = data.map(item => {
-                console.log(item.inli);
-                
-                return `<li class="product_li">
+    $.ajax({
+        url: "../server/getlist.php",
+        dataType: "json"
+    }).done(data => {
+
+
+        let html = data.map(item => {
+            return `<li class="product_li" style="position:relative">
                 <div class="h_product">
-                    <a target="_blank" href="/product-detail.html?productCode=u0000000004782">
                         <div class="product_content">
                             <ul class="corner-ul false false">
                                 <li class="corner-li">
@@ -59,10 +56,12 @@ $(() => {
                             </ul>
                             <div class="product_back">
                                 <div class="back_pic">
+                    <a target="_blank" href="/product-detail.html?productCode=u0000000004782">
+
                                     <img class="pic_img"
                                         src=${item.img_src}
                                         alt="男装 (UT) DPJ印花T恤(短袖) 414323  超值精选 门店自提 XS 黑色,"
-                                        title="男装 (UT) DPJ印花T恤(短袖) 414323  超值精选 门店自提 XS 黑色,">
+                                        title="男装 (UT) DPJ印花T恤(短袖) 414323  超值精选 门店自提 XS 黑色,"></a>
                                 </div>
                             </div>
                             <div class="block">
@@ -98,22 +97,38 @@ $(() => {
                                     <input type="hidden" value="4">
                                     <span>(<span class="span-boder">${item.talknum}</span>)</span></span>
                             </div>
+                <div class="carti" ;">加入购物车   <i class="iconfont icon-gouwucheman" "></i></div>
+
                         </div>
 
-                    </a>
+                    
+
                 </div>
+                
+                
             </li>
                 
                 
                 `
-            }).join("");
-            $(".product_ul").html(html)
-            
-        })
+        }).join("");
+        $(".product_ul").html(html)
+
+    })
 
 
 
+    console.log(1);
 
+
+    $(".product_ul").on("click","div", function (e) {
+        e.stopPropagation();
+        if($(this).hasClass("carti")){
+            console.log(1);
+            //加入购物车
+        }
+      
+        
+    });
 
 
 

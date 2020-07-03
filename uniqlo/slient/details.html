@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/iconfont.css">
     <link rel="stylesheet" href="css/comment.css">
-    <link rel="stylesheet" href="details.scss">
+    <link rel="stylesheet" href="css/details.min.css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/details.js"></script>
+
+    </style>
 </head>
 
 <body>
@@ -397,15 +400,16 @@
         </div>
     </header>
 
-    <div class="wrap .Content">
+    <div class="wrap Content">
         <div class="h-cow clearfix">
             <div class="img_list">
                 <div class="h-col" style="width: 80px;">
-                    <div class="picture-viewer-scroll" style="width: 80px;"><button disabled=""></button>
+                    <div class="picture-viewer-scroll" style="width: 80px;">
+                        <button disabled=""></button>
                         <div class="picture-viewer-scroll-content" style="height: 448px; width: 88px;">
                             <ul style="top: 0px;">
-                                <li class="" style="margin-bottom: 10px; width: 80px; height: 80px;"><img
-                                        src="https://www.uniqlo.cn/hmall/test/u0000000015581/main/first/1000/1.jpg">
+                                <li class="" style="margin-bottom: 10px; width: 80px; height: 80px;">
+                                    <img src="https://www.uniqlo.cn/hmall/test/u0000000015581/main/first/1000/1.jpg">
                                 </li>
                                 <li class="selected" style="margin-bottom: 10px; width: 80px; height: 80px;"><img
                                         src="https://www.uniqlo.cn/hmall/test/u0000000015581/main/other1/1000/2.jpg">
@@ -420,14 +424,120 @@
                                         src="https://www.uniqlo.cn/hmall/test/u0000000015581/main/other4/1000/5.jpg">
                                 </li>
                             </ul>
-                        </div><button disabled=""></button>
+                        </div>
+                        <button disabled=""></button>
                     </div>
                 </div>
-                <div class="h-col picture-viewer-pre"></div>
-                <div class="h-col" style="width: 500px;"></div>
-                <div class="h-col picture-viewer-next"></div>
+                <div class="h-col picture-viewer-pre" style="width: 50px;">
+                    <button></button>
+                </div>
+                <div class="h-col" style="width: 500px;">
+                    <div class="picture-viewer-picture" style="width: 500px; height: 500px;">
+                        <div style="position: relative;">
+                            <img src="./img/2.jpg"
+                                class="detail-img">
+                            <div class="cursor-div leave" style="opacity: 0; border-width: 0px;"></div>
+                        </div>
+                        <div class="picture-viewer-overlay-picture" style="width: 500px; height: 500px; display: none;">
+                            <img src="https://www.uniqlo.cn/hmall/test/u0000000015581/main/first/1000/1.jpg"
+                                style="transform: translate(0%, -19.16%);"></div>
+                    </div>
+                </div>
+                <div class="h-col picture-viewer-next" style="margin-left: 630px; float: none;"><button></button></div>
             </div>
-            <div class="detail_list"></div>
+            <div class="h-col detail_list" style="margin-left: 690px;float: none;">
+                <div class="product-detail-list-title">男装/女装/情侣装 (UT) DPJ 印花T恤(短袖) 427591</div>
+                <div class="product-detail-list-subtitle" style="color: rgb(254, 0, 0);"><a
+                        href="https://www.uniqlo.cn/special_sizes.html">初上市尺码范围:XS-XXXXL</a></div>
+                <div class="product-detail-list-price h-clearfix"><span class="product-detail-list-price-main"><span
+                            class="h-currency h-cny bold" style="color: rgb(255, 0, 0);">¥79.00</span></span>
+                    <div class="product-detail-list-price-right"><span>
+                            <!-- react-text: 202 -->初上市价格：
+                            <!-- /react-text --><span class="h-currency h-cny bold">¥99.00</span></span><span
+                            class="h-comment-star"><i class="h-comment-star-light"
+                                style="width: 14px; height: 14px;"></i><i class="h-comment-star-light"
+                                style="width: 14px; height: 14px; margin-left: 5px;"></i><i class="h-comment-star-light"
+                                style="width: 14px; height: 14px; margin-left: 5px;"></i><i class="h-comment-star-light"
+                                style="width: 14px; height: 14px; margin-left: 5px;"></i><i class="h-comment-star-light"
+                                style="width: 14px; height: 14px; margin-left: 5px;"></i><input type="hidden"
+                                value="5"></span></div>
+                </div>
+                <div class="product-detail-list-promotion">
+                    <div class="product-detail-list-promotion-container"><label
+                            class="product-detail-list-label">活动：</label>
+                        <ul class="product-detail-list-promotion-detail">
+                            <li><span title="订单满200元免运费（门店急送订单除外）">订单满200元免运费（门店急送订单除外）</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="sku-select">
+                        <label><b>颜色：</b></label>
+                        <ul class="h-clearfix sku-select-colors">
+                            <li class=""><img src="https://www.uniqlo.cn/hmall/test/u0000000015581/sku/40/COL00.jpg">
+                            </li>
+                        </ul><label><b>尺码：</b><!-- react-text: 1460 -->160/76A/XS
+                            <!-- /react-text --></label>
+                        <ul class="h-clearfix sku-select-sizes clearfix">
+                            <li class="active">160/76A/XS</li>
+                            <li class="">165/84A/S</li>
+                            <li class="">170/92A/M</li>
+                            <li class="">180/108B/XL</li>
+                            <li class="">185/112C/XXL</li>
+                        </ul>
+                    </div>
+                    <div class="open-size-form">
+                        <span>
+                            <i class="icon  icon-clothes">
+                            </i>
+                            尺码表
+                        </span>
+                    </div>
+                    <div>
+                        <div class="product-detail-list-dispatch"><label class="product-detail-list-label">配送方式：</label>
+                            <div class="h-radio-list  "><label><i class="h-radio  checked"><input type="radio"
+                                            value="EXPRESS"></i><span>快递配送</span></label><label><i
+                                        class="h-radio "><input type="radio"
+                                            value="PICKUP"></i><span>门店自提</span></label><input type="hidden"
+                                    name="distribution" value="EXPRESS"></div>
+                            <div class="product-detail-list-dispatch-item"><label
+                                    class="product-detail-list-label">配送至：</label><span
+                                    class="product-detail-list-dispatch-capital">上海</span><i
+                                    class="icon  icon-address-open" style="cursor: pointer;"></i><span>快递</span><span
+                                    class="h-currency h-cny bold">¥7.00</span>
+
+                            </div>
+                        </div>
+                        <div class="product-detail-list-counter"><label class="product-detail-list-label">数量：</label>
+                            <div class="counter"><button class="counter-minus"></button><input type="text"
+                                    value="1"><button class="counter-plus"></button></div><span
+                                class="product-detail-list-counter-stock">库存充足</span>
+                        </div>
+                    </div>
+                    <div class="product-detail-list-button-group">
+                        <button type="button" class="h-btn button-buyNow">
+                            立即购买
+                        </button><button type="button" class="h-btn button-addCart">
+                            <i class="icon  icon-cart"></i>添加至购物车
+                        </button>
+                    </div>
+                    <div class="product-detail-list-footer"><span>支持30天无理由退换货</span>
+                        <div class="share-all"><i class="icon  icon-share"></i><span>分享商品</span>
+                            <div class="share-overlay">
+                                <div class="weixin_div">
+                                    <div class="weixin_img"><img src="">
+                                        <div class="share_span">扫一扫分享到微信</div>
+                                    </div><i class="icon  icon-weixin"></i>
+                                </div><i class="icon  icon-blog" style="cursor: pointer;"></i><i
+                                    class="icon  icon-qqZone" style="cursor: pointer;"></i>
+                            </div>
+                        </div>
+                        <div class="collect-pic"></div><span>收藏</span>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
     </div>
 
