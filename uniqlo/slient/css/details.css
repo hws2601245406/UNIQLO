@@ -100,10 +100,6 @@
   border-color: #000;
 }
 
-.Content .img_list .picture-viewer-picture .leave {
-  transition: all .3s;
-}
-
 .Content .img_list .picture-viewer-picture .picture-viewer-overlay-picture {
   position: absolute;
   top: 0;

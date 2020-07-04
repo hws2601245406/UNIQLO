@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/copy.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/iconfont.css">
     <link rel="stylesheet" href="css/comment.css">
@@ -12,11 +13,35 @@
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/common.js"></script>
     <script src="js/details.js"></script>
+    <script src="js/index.js"></script>
+    <script src="./layer-v3.1.1/layer/layer.js"></script>
 
     </style>
 </head>
 
 <body>
+    <div class="popup-container">
+        <div class="h-popup h-mini-hotcart-popup" style="left: 680.568px; top: 8px;">
+            <div class="h-mini-hotcart-box">
+                <div class="h-mini-hotcart-title">
+                    <!-- react-text: 2256 -->共有商品
+                    <!-- /react-text -->
+                    <!-- react-text: 2257 -->（
+                    <!-- /react-text -->
+                    <!-- react-text: 2258 -->2
+                    <!-- /react-text -->
+                    <!-- react-text: 2259 -->）
+                    <!-- /react-text -->
+                </div>
+                <div class="cart_list">
+                
+            </div>
+                <div class="h-mini-hotcart-view"><button type="button" class="h-btn red" style="height: 44px;"><i
+                            class="icon  icon-cart"></i><!-- react-text: 2301 -->查看购物车
+                        <!-- /react-text --></button></div>
+            </div>
+        </div>
+    </div>
     <!-- 悬挂 -->
     <div class="wrap">
         <div class="fix_wrap">
@@ -44,9 +69,9 @@
                 </li>
                 <li class="spliter"></li>
                 <li>
-                    <a href="#">
+                    <a>
                         <i class="iconfont icon-gouwucheman"></i>
-                        <span>购物车</span>
+                        <a href="Cart.html"><span>购物车</span></a>
                         <i class="iconfont icon-weibiaoti35"></i>
                     </a>
                 </li>
@@ -402,7 +427,7 @@
 
     <div class="wrap Content">
         <div class="h-cow clearfix">
-            <div class="img_list">
+            <div class="img_list" data-id="1">
                 <div class="h-col" style="width: 80px;">
                     <div class="picture-viewer-scroll" style="width: 80px;">
                         <button disabled=""></button>
@@ -439,8 +464,8 @@
                             <div class="cursor-div leave" style="opacity: 0; border-width: 0px;"></div>
                         </div>
                         <div class="picture-viewer-overlay-picture" style="width: 500px; height: 500px; display: none;">
-                            <img src="https://www.uniqlo.cn/hmall/test/u0000000015581/main/first/1000/1.jpg"
-                                style="transform: translate(0%, -19.16%);"></div>
+                            <img src="img/2.jpg"
+                                style="transform: translate(0%, 0%);"></div>
                     </div>
                 </div>
                 <div class="h-col picture-viewer-next" style="margin-left: 630px; float: none;"><button></button></div>
@@ -474,7 +499,7 @@
                     <div class="sku-select">
                         <label><b>颜色：</b></label>
                         <ul class="h-clearfix sku-select-colors">
-                            <li class=""><img src="https://www.uniqlo.cn/hmall/test/u0000000015581/sku/40/COL00.jpg">
+                            <li class="" data-color="00白色"><img src="https://www.uniqlo.cn/hmall/test/u0000000015581/sku/40/COL00.jpg">
                             </li>
                         </ul><label><b>尺码：</b><!-- react-text: 1460 -->160/76A/XS
                             <!-- /react-text --></label>
@@ -540,7 +565,28 @@
             </div>
         </div>
     </div>
-
+    <div class="popup-container">
+        <div class="h-popup h-mini-hotcart-popup" style="left: 680.568px; top: 8px;">
+            <div class="h-mini-hotcart-box">
+                <div class="h-mini-hotcart-title">
+                    <!-- react-text: 2256 -->共有商品
+                    <!-- /react-text -->
+                    <!-- react-text: 2257 -->（
+                    <!-- /react-text -->
+                    <!-- react-text: 2258 -->2
+                    <!-- /react-text -->
+                    <!-- react-text: 2259 -->）
+                    <!-- /react-text -->
+                </div>
+                <div class="cart_list">
+                
+            </div>
+                <div class="h-mini-hotcart-view"><button type="button" class="h-btn red" style="height: 44px;"><i
+                            class="icon  icon-cart"></i><!-- react-text: 2301 -->查看购物车
+                        <!-- /react-text --></button></div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- footer -->

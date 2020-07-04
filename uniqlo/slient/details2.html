@@ -6,21 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/copy.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/iconfont.css">
     <link rel="stylesheet" href="css/comment.css">
-    <link rel="stylesheet" href="css/Mickey-list.css">
+    <link rel="stylesheet" href="css/details.min.css">
     <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/Mickey-list.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/details.js"></script>
     <script src="js/index.js"></script>
-    
-    <style>
-        @font-face {
-            font-family: 'UniqloBold';
-            src: url("./2c713234fa472e52489cdc6d434c983f.ttf")
-        }
+    <script src="./layer-v3.1.1/layer/layer.js"></script>
+
     </style>
 </head>
 
@@ -47,6 +42,7 @@
             </div>
         </div>
     </div>
+    <!-- 悬挂 -->
     <div class="wrap">
         <div class="fix_wrap">
             <ul>
@@ -133,7 +129,6 @@
     </div>
     <!-- //返回顶部按钮 -->
     <div class="toTop">
-
     </div>
     <!-- 头部 -->
     <header class="hd">
@@ -429,322 +424,150 @@
         <div class="nav-mask-cover" style="display: none;"></div>
         </div>
     </header>
-    <!-- banner -->
-    <div class="wrap banner">
-        <div style="width: 1280px; height: 355px;font-size:0">
-            <img src="https://www.uniqlo.cn/public/image/L3/ut/2020/3/16/Mickey_Manga_Art_1280.jpg" alt="mickyart">
-            <div style="margin-left:65px;margin-top: -60px">
-                <a href="/ut_top.html" target="_blank" style="margin-right:25px">
-                    <img src="https://www.uniqlo.cn/public/image/L2/UT-wmkb/chakan.png">
-                </a>
-            </div>
-            <div style="margin-left: 355px;margin-top:-21px;">
 
-                <a href="https://www.uniqlo.cn/c/1514163491.html" target="_blank" style="margin-right:25px;">
-                    <img src="https://www.uniqlo.cn/public/image/L2/UT-wmkb/men.png">
-                </a>
-
-                <a href="https://www.uniqlo.cn/c/1514163490.html" target="_blank" style="margin-right:25px;">
-                    <img src="https://www.uniqlo.cn/public/image/L2/UT-wmkb/women.png">
-                </a>
-
-            </div>
-        </div>
-    </div>
-    <div class="wrap padding_content">
-        <div class="title1">
-            <div class="exist_span">
-                <span>全部结果</span>
-                <i class="iconfont icon-you"></i>
-            </div>
-        </div>
-        <div class="content clearfix">
-            <div class="content_left">
-                <div class="left_list">
-                    <div class="left_list_header">
-                        <span>商品分类</span>
-                        <p style="font-size: 12px; margin-left: 30px;">全商品</p>
-                    </div>
-                    <ul>
-                        <!-- 插入部分 -->
-                        <!-- <li class="left_list_s">
-                            <i></i>
-                            <a href="/c/BENZHOUXINPIN20200629.html">春秋新品</a>
-                            <ul>
-                                <li>
-                                    <a href="/c/1539056998.html">男装</a>
+    <div class="wrap Content">
+        <div class="h-cow clearfix">
+            <div class="img_list" data-id="2">
+                <div class="h-col" style="width: 80px;">
+                    <div class="picture-viewer-scroll" style="width: 80px;">
+                        <button disabled=""></button>
+                        <div class="picture-viewer-scroll-content" style="height: 448px; width: 88px;">
+                            <ul style="top: 0px;">
+                                <li class="" style="margin-bottom: 10px; width: 80px; height: 80px;">
+                                    <img src="https://www.uniqlo.cn/hmall/test/u0000000013782/main/first/1000/1.jpg">
+                                </li>
+                                <li class="selected" style="margin-bottom: 10px; width: 80px; height: 80px;"><img
+                                        src="https://www.uniqlo.cn/hmall/test/u0000000013782/main/other1/1000/2.jpg">
+                                </li>
+                                <li class="" style="margin-bottom: 10px; width: 80px; height: 80px;"><img
+                                        src="https://www.uniqlo.cn/hmall/test/u0000000013782/main/other2/1000/3.jpg">
+                                </li>
+                                <li class="" style="margin-bottom: 10px; width: 80px; height: 80px;"><img
+                                        src="https://www.uniqlo.cn/hmall/test/u0000000013782/main/other3/1000/4.jpg">
+                                </li>
+                                <li class="" style="margin-bottom: 10px; width: 80px; height: 80px;"><img
+                                        src="https://www.uniqlo.cn/hmall/test/u0000000013782/main/other4/1000/5.jpg">
                                 </li>
                             </ul>
-                        </li> -->
-                    </ul>
-                </div>
-            </div>
-            <!-- 商品列表 -->
-            <div class="content_right" style="margin-left: 20px; width: 990px;">
-                <div class="div_sort">
-                    <ul class="ul_sort">
-                        <li class="sort" data-sort="default">
-                            <span>综合</span>
-                            <div class="icon_sort"></div>
-                        </li>
-                        <li class="sort" data-sort="num_asc"><span>销量</span>
-                            <div class="icon_sort"></div>
-                        </li>
-                        <li><span>上架时间</span>
-                            <div class="icon_sort"></div>
-                        </li >
-                        <li class="sort" data-sort="price_asc"><span>价格</span>
-                            <div class="sort_price"></div>
-                        </li>
-                    </ul>
-                    <div class="div_price">
-                        <div class="input_price">
-                            <span class="icon_sale">¥</span>
-                            <input type="text" value="">
                         </div>
-                        <span class="span_line">-</span>
-                        <div class="input_price">
-                            <span class="icon_sale">¥</span>
-                            <input type="text" value="">
-                        </div>
-                        <input type="button" value="确定" class="button_b"></input type="button" value="确定">
+                        <button disabled=""></button>
                     </div>
-
-
-                    <div class="div_number"></div>
                 </div>
-                <div class="product">
-                    <ul class="product_ul">
-                        <!-- 插入部分 -->
-                        <!-- <li class="product_li">
-                            <div class="h_product">
-                                <a target="_blank" href="/product-detail.html?productCode=u0000000004782">
-                                    <div class="product_content">
-                                        <ul class="corner-ul false false">
-                                            <li class="corner-li">
-
-                                            </li>
-                                        </ul>
-                                        <div class="product_back">
-                                            <div class="back_pic">
-                                                <img class="pic_img"
-                                                    src="https://www.uniqlo.cn/hmall/test/u0000000004782/main/first/561/1.jpg"
-                                                    alt="男装 (UT) DPJ印花T恤(短袖) 414323  超值精选 门店自提 XS 黑色,"
-                                                    title="男装 (UT) DPJ印花T恤(短袖) 414323  超值精选 门店自提 XS 黑色,">
-                                            </div>
-                                        </div>
-                                        <div class="block">
-                                            <ul class="showPic-ul">
-                                                <li style="display: block;">
-                                                    <div class="h-picture selected" style="width: 21px; height: 21px;">
-                                                        <img class="picture-img"
-                                                            src="https://www.uniqlo.cn/hmall/test/u0000000004782/chip/22/COL09.jpg">
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <p>男装
-                                            <span class="p-size">XS</span>
-                                        </p>
-                                        <p>(UT) DPJ印花T恤(短袖) 414323</p>
-                                        <span class="h-currency h-cny bold"
-                                            style="color: red;font-family: UniqloBold;">¥39.00</span>
-                                        <div class="comment-star">
-                                            <span class="h-comment-star">
-                                                <i class="h-comment-star-light" style="width: 14px; height: 14px;">
-                                                </i>
-                                                <i class="h-comment-star-light"
-                                                    style="width: 14px; height: 14px; margin-left: 3px;">
-                                                </i>
-                                                <i class="h-comment-star-light"
-                                                    style="width: 14px; height: 14px; margin-left: 3px;">
-                                                </i>
-                                                <i class="h-comment-star-light"
-                                                    style="width: 14px; height: 14px; margin-left: 3px;">
-                                                </i>
-                                                <i style="width: 14px; height: 14px; margin-left: 3px;"></i>
-                                                <input type="hidden" value="4">
-                                                <span>(<span class="span-boder">100</span>)</span></span>
-                                        </div>
-                                    </div>
-
-                                </a>
-                            </div>
-                        </li> -->
-                        <!-- <li class="product_li">
-                            <div class="h_product">
-                                <a target="_blank" href="/product-detail.html?productCode=u0000000004782">
-                                    <div class="product_content">
-                                        <ul class="corner-ul false false"></ul>
-                                        <div class="product_back">
-                                            <div class="back_pic">
-                                                <img class="pic_img"
-                                                    src="https://www.uniqlo.cn/hmall/test/u0000000004782/main/first/561/1.jpg"
-                                                    alt="男装 (UT) DPJ印花T恤(短袖) 414323  超值精选 门店自提 XS 黑色,"
-                                                    title="男装 (UT) DPJ印花T恤(短袖) 414323  超值精选 门店自提 XS 黑色,">
-                                            </div>
-                                        </div>
-                                        <div class="block">
-                                            <ul class="showPic-ul">
-                                                <li style="display: block;">
-                                                    <div class="h-picture selected" style="width: 21px; height: 21px;">
-                                                        <img class="picture-img"
-                                                            src="https://www.uniqlo.cn/hmall/test/u0000000004782/chip/22/COL09.jpg">
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <p>男装
-                                            <span class="p-size">XS</span>
-                                        </p>
-                                        <p>(UT) DPJ印花T恤(短袖) 414323</p>
-                                        <span class="h-currency h-cny bold"
-                                            style="color: red;font-family: UniqloBold;">¥39.00</span>
-                                        <div class="comment-star">
-                                            <span class="h-comment-star">
-                                                <i class="h-comment-star-light" style="width: 14px; height: 14px;">
-                                                </i>
-                                                <i class="h-comment-star-light"
-                                                    style="width: 14px; height: 14px; margin-left: 3px;">
-                                                </i>
-                                                <i class="h-comment-star-light"
-                                                    style="width: 14px; height: 14px; margin-left: 3px;">
-                                                </i>
-                                                <i class="h-comment-star-light"
-                                                    style="width: 14px; height: 14px; margin-left: 3px;">
-                                                </i>
-                                                <i style="width: 14px; height: 14px; margin-left: 3px;"></i>
-                                                <input type="hidden" value="4">
-                                                <span>(<span class="span-boder">100</span>)</span></span>
-                                        </div>
-                                    </div>
-
-                                </a>
-                            </div>
-                        </li>
-                        <li class="product_li">
-                            <div class="h_product">
-                                <a target="_blank" href="/product-detail.html?productCode=u0000000004782">
-                                    <div class="product_content">
-                                        <ul class="corner-ul false false"></ul>
-                                        <div class="product_back">
-                                            <div class="back_pic">
-                                                <img class="pic_img"
-                                                    src="https://www.uniqlo.cn/hmall/test/u0000000004782/main/first/561/1.jpg"
-                                                    alt="男装 (UT) DPJ印花T恤(短袖) 414323  超值精选 门店自提 XS 黑色,"
-                                                    title="男装 (UT) DPJ印花T恤(短袖) 414323  超值精选 门店自提 XS 黑色,">
-                                            </div>
-                                        </div>
-                                        <div class="block">
-                                            <ul class="showPic-ul">
-                                                <li style="display: block;">
-                                                    <div class="h-picture selected" style="width: 21px; height: 21px;">
-                                                        <img class="picture-img"
-                                                            src="https://www.uniqlo.cn/hmall/test/u0000000004782/chip/22/COL09.jpg">
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <p>男装
-                                            <span class="p-size">XS</span>
-                                        </p>
-                                        <p>(UT) DPJ印花T恤(短袖) 414323</p>
-                                        <span class="h-currency h-cny bold"
-                                            style="color: red;font-family: UniqloBold;">¥39.00</span>
-                                        <div class="comment-star">
-                                            <span class="h-comment-star">
-                                                <i class="h-comment-star-light" style="width: 14px; height: 14px;">
-                                                </i>
-                                                <i class="h-comment-star-light"
-                                                    style="width: 14px; height: 14px; margin-left: 3px;">
-                                                </i>
-                                                <i class="h-comment-star-light"
-                                                    style="width: 14px; height: 14px; margin-left: 3px;">
-                                                </i>
-                                                <i class="h-comment-star-light"
-                                                    style="width: 14px; height: 14px; margin-left: 3px;">
-                                                </i>
-                                                <i style="width: 14px; height: 14px; margin-left: 3px;"></i>
-                                                <input type="hidden" value="4">
-                                                <span>(<span class="span-boder">100</span>)</span></span>
-                                        </div>
-                                    </div>
-
-                                </a>
-                            </div>
-                        </li>
-                        <li class="product_li">
-                            <div class="h_product">
-                                <a target="_blank" href="/product-detail.html?productCode=u0000000004782">
-                                    <div class="product_content">
-                                        <ul class="corner-ul false false"></ul>
-                                        <div class="product_back">
-                                            <div class="back_pic">
-                                                <img class="pic_img"
-                                                    src="https://www.uniqlo.cn/hmall/test/u0000000004782/main/first/561/1.jpg"
-                                                    alt="男装 (UT) DPJ印花T恤(短袖) 414323  超值精选 门店自提 XS 黑色,"
-                                                    title="男装 (UT) DPJ印花T恤(短袖) 414323  超值精选 门店自提 XS 黑色,">
-                                            </div>
-                                        </div>
-                                        <div class="block">
-                                            <ul class="showPic-ul">
-                                                <li style="display: block;">
-                                                    <div class="h-picture selected" style="width: 21px; height: 21px;">
-                                                        <img class="picture-img"
-                                                            src="https://www.uniqlo.cn/hmall/test/u0000000004782/chip/22/COL09.jpg">
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <p>男装
-                                            <span class="p-size">XS</span>
-                                        </p>
-                                        <p>(UT) DPJ印花T恤(短袖) 414323</p>
-                                        <span class="h-currency h-cny bold"
-                                            style="color: red;font-family: UniqloBold;">¥39.00</span>
-                                        <div class="comment-star">
-                                            <span class="h-comment-star">
-                                                <i class="h-comment-star-light" style="width: 14px; height: 14px;">
-                                                </i>
-                                                <i class="h-comment-star-light"
-                                                    style="width: 14px; height: 14px; margin-left: 3px;">
-                                                </i>
-                                                <i class="h-comment-star-light"
-                                                    style="width: 14px; height: 14px; margin-left: 3px;">
-                                                </i>
-                                                <i class="h-comment-star-light"
-                                                    style="width: 14px; height: 14px; margin-left: 3px;">
-                                                </i>
-                                                <i style="width: 14px; height: 14px; margin-left: 3px;"></i>
-                                                <input type="hidden" value="4">
-                                                <span>(<span class="span-boder">100</span>)</span></span>
-                                        </div>
-                                    </div>
-
-                                </a>
-                            </div>
-                        </li> -->
-
-                    </ul>
-
-                    <nav style="text-align: center;">
-                        <ul class="pagination">
-                            <li id="prevPage">
-                                <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">上一页</span>
-                                </a>
-                            </li>
-                            <li id="nextPage">
-                                <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">下一页</span>
-                                </a>
-                            </li>
+                <div class="h-col picture-viewer-pre" style="width: 50px;">
+                    <button></button>
+                </div>
+                <div class="h-col" style="width: 500px;">
+                    <div class="picture-viewer-picture" style="width: 500px; height: 500px;">
+                        <div style="position: relative;">
+                            <img src="./img/22.jpg"
+                                class="detail-img">
+                            <div class="cursor-div leave" style="opacity: 0; border-width: 0px;"></div>
+                        </div>
+                        <div class="picture-viewer-overlay-picture" style="width: 500px; height: 500px; display: none;">
+                            <img src="https://www.uniqlo.cn/hmall/test/u0000000015581/main/first/1000/1.jpg"
+                                style="transform: translate(0%, -19.16%);"></div>
+                    </div>
+                </div>
+                <div class="h-col picture-viewer-next" style="margin-left: 630px; float: none;"><button></button></div>
+            </div>
+            <div class="h-col detail_list" style="margin-left: 690px;float: none;">
+                <div class="product-detail-list-title">男装/女装 (UT) DPJ 印花T恤(短袖) 427911</div>
+                <div class="product-detail-list-subtitle" style="color: rgb(254, 0, 0);"><a
+                        href="https://www.uniqlo.cn/special_sizes.html">初上市尺码范围:XS-XXXXL</a></div>
+                <div class="product-detail-list-price h-clearfix"><span class="product-detail-list-price-main"><span
+                            class="h-currency h-cny bold" style="color: rgb(255, 0, 0);">¥79.00</span></span>
+                    <div class="product-detail-list-price-right"><span>
+                            <!-- react-text: 202 -->初上市价格：
+                            <!-- /react-text --><span class="h-currency h-cny bold">¥99.00</span></span><span
+                            class="h-comment-star"><i class="h-comment-star-light"
+                                style="width: 14px; height: 14px;"></i><i class="h-comment-star-light"
+                                style="width: 14px; height: 14px; margin-left: 5px;"></i><i class="h-comment-star-light"
+                                style="width: 14px; height: 14px; margin-left: 5px;"></i><i class="h-comment-star-light"
+                                style="width: 14px; height: 14px; margin-left: 5px;"></i><i class="h-comment-star-light"
+                                style="width: 14px; height: 14px; margin-left: 5px;"></i><input type="hidden"
+                                value="5"></span></div>
+                </div>
+                <div class="product-detail-list-promotion">
+                    <div class="product-detail-list-promotion-container"><label
+                            class="product-detail-list-label">活动：</label>
+                        <ul class="product-detail-list-promotion-detail">
+                            <li><span title="订单满200元免运费（门店急送订单除外）">7.3-7.5会员狂欢周末免邮购（门店急送订单及部分商品除外）</span></li>
                         </ul>
-                    </nav>      
+                    </div>
                 </div>
+                <div>
+                    <div class="sku-select">
+                        <label><b>颜色：</b></label>
+                        <ul class="h-clearfix sku-select-colors">
+                            <li class="" data-color="09黑色"><img src="https://www.uniqlo.cn/hmall/test/u0000000013782/sku/40/COL09.jpg">
+                            </li>
+                        </ul><label><b>尺码：</b><!-- react-text: 1460 -->160/76A/XS
+                            <!-- /react-text --></label>
+                        <ul class="h-clearfix sku-select-sizes clearfix">
+                            <li class="active">160/76A/XS</li>
+                            <li class="">165/84A/S</li>
+                            <li class="">170/92A/M</li>
+                            <li class="">180/108B/XL</li>
+                            <li class="">185/112C/XXL</li>
+                        </ul>
+                    </div>
+                    <div class="open-size-form">
+                        <span>
+                            <i class="icon  icon-clothes">
+                            </i>
+                            尺码表
+                        </span>
+                    </div>
+                    <div>
+                        <div class="product-detail-list-dispatch"><label class="product-detail-list-label">配送方式：</label>
+                            <div class="h-radio-list  "><label><i class="h-radio  checked"><input type="radio"
+                                            value="EXPRESS"></i><span>快递配送</span></label><label><i
+                                        class="h-radio "><input type="radio"
+                                            value="PICKUP"></i><span>门店自提</span></label><input type="hidden"
+                                    name="distribution" value="EXPRESS"></div>
+                            <div class="product-detail-list-dispatch-item"><label
+                                    class="product-detail-list-label">配送至：</label><span
+                                    class="product-detail-list-dispatch-capital">上海</span><i
+                                    class="icon  icon-address-open" style="cursor: pointer;"></i><span>快递</span><span
+                                    class="h-currency h-cny bold">¥7.00</span>
+
+                            </div>
+                        </div>
+                        <div class="product-detail-list-counter"><label class="product-detail-list-label">数量：</label>
+                            <div class="counter"><button class="counter-minus"></button><input type="text"
+                                    value="1"><button class="counter-plus"></button></div><span
+                                class="product-detail-list-counter-stock">库存充足</span>
+                        </div>
+                    </div>
+                    <div class="product-detail-list-button-group">
+                        <button type="button" class="h-btn button-buyNow">
+                            立即购买
+                        </button><button type="button" class="h-btn button-addCart">
+                            <i class="icon  icon-cart"></i>添加至购物车
+                        </button>
+                    </div>
+                    <div class="product-detail-list-footer"><span>支持30天无理由退换货</span>
+                        <div class="share-all"><i class="icon  icon-share"></i><span>分享商品</span>
+                            <div class="share-overlay">
+                                <div class="weixin_div">
+                                    <div class="weixin_img"><img src="">
+                                        <div class="share_span">扫一扫分享到微信</div>
+                                    </div><i class="icon  icon-weixin"></i>
+                                </div><i class="icon  icon-blog" style="cursor: pointer;"></i><i
+                                    class="icon  icon-qqZone" style="cursor: pointer;"></i>
+                            </div>
+                        </div>
+                        <div class="collect-pic"></div><span>收藏</span>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </div>
+
+
+
     <!-- footer -->
     <footer class="wrap">
         <div class="footer_nav">
@@ -780,7 +603,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>

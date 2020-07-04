@@ -92,6 +92,7 @@ $(() => {
                 "backgroundColor": "hsla(0,0%,100%,.85)",
                 "zIndex":"1999"
             })
+            $(".popup-container").addClass("popup_fix")
         }else{
             $($(".wrap")[0]).css({
                 'position':"",
@@ -99,7 +100,11 @@ $(() => {
                 "backgroundColor": "hsla(0,0%,100%,.85)",
                 "zIndex":"1999"
             })
+            // $(".popup-container").toggleClass("popup_fix")
 
+        }
+        if(scrTop >= 0) {
+            $(".popup-container").removeClass("popup_show")
         }
     });    
     //返回顶部
@@ -120,6 +125,57 @@ $(() => {
         }
         
     });
+
+    //小购物车
+    $(".icon-weibiaoti35").click(function () {
+        let user_id = localStorage.getItem("user_id") || "";
+
+        $(".popup-container").toggleClass("popup_show")
+        $.ajax({
+            url: "../server/getCart.php",
+            data: { user_id },
+            dataType: "json",
+    
+        }).done(data => {
+            console.log(data);
+    
+    
+            let html = $.map(data, function (item, indexOrKey) {
+    
+                return `
+                <div class="h-mini-hotcart-container h-clearfix">
+                    <div class="h-mini-hotcart-img"><a href="/product-detail.html?productCode=u0000000014620"><img
+                                src=${item.img_src}></a></div>
+                    <div class="h-mini-hotcart-des">
+                        <p title="${item.title}">${item.title}</a></p>
+                        <p>
+                            <!-- react-text: 2268 -->尺码：
+                            <!-- /react-text -->
+                            <!-- react-text: 2269 -->${item.good_size}
+                            <!-- /react-text -->
+                        </p>
+                        <p>
+                            <!-- react-text: 2271 -->颜色：
+                            <!-- /react-text -->
+                            <!-- react-text: 2272 -->${item.good_color}
+                            <!-- /react-text -->
+                        </p><!-- react-text: 2273 -->
+                        <!-- /react-text -->
+                        <p>
+                            <!-- react-text: 2275 -->数量：
+                            <!-- /react-text -->
+                            <!-- react-text: 2276 -->${item.num}
+                            <!-- /react-text -->
+                        </p>
+                        <p><span class="h-currency h-cny bold">${item.price}</span></p>
+                    </div>
+                </div>
+                `
+            }).join("");
+    
+            $(".cart_list").html(html)
+        });
+      })
 
 
 
