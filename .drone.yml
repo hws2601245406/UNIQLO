@@ -2,8 +2,8 @@ kind: pipeline
 name: default
 
 steps:
-- name: test
-  image: golang
-  commands:
-  - go test
-  - go build
+  - name: build
+    image: node:latest
+    commands:
+      - npm i
+      - npm run build
