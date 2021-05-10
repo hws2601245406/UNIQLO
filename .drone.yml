@@ -1,0 +1,105 @@
+global-variables:
+  - &clone
+    name: 克隆大屏代码
+    image: alpine/git
+    commands:
+    - git clone -b "$DRONE_BRANCH" "$DRONE_REMOTE_URL" .
+
+  - &build_release_test_code
+    name: 大屏代码构建
+    image: hub.perseus.ruqimobility.com/library/ci_ruqi_datav
+    pull: always
+    commands:
+    - ln -sfn /drone/node_modules node_modules
+    - npm run build
+    - mv dist test-large-screen
+    - ls -la
+
+  - &deploy
+    name: 部署到测试环境
+    image: appleboy/drone-scp
+    settings:
+      host:
+        from_secret: test_host
+      port:
+        from_secret: test_port
+      username:
+        from_secret: test_user
+      password:
+        from_secret: test_pw
+      target: /home/wwwroot/
+      source: test-large-screen
+
+kind: pipeline
+type: kubernetes
+name: release
+
+clone:
+  disable: true
+
+steps:
+  - <<: *clone
+
+  - <<: *build_release_test_code
+
+  - <<: *deploy
+
+trigger:
+  branch:
+  - release/test
+  event:
+  - push
+
+---
+
+global-variables:
+  - &clone
+    name: 克隆大屏代码
+    image: alpine/git
+    commands:
+    - git clone -b "$DRONE_BRANCH" "$DRONE_REMOTE_URL" .
+
+  - &build_release_prod_code
+    name: 大屏代码构建
+    image: hub.perseus.ruqimobility.com/library/ci_ruqi_datav
+    pull: always
+    commands:
+    - ln -sfn /drone/node_modules node_modules
+    - npm run build
+    - mv dist large-screen
+    - ls -la
+
+  - &deploy
+    name: 部署到生产环境
+    image: appleboy/drone-scp
+    settings:
+      host:
+        from_secret: prod_host
+      port:
+        from_secret: prod_port
+      username:
+        from_secret: prod_user
+      password:
+        from_secret: pord_pw
+      target: /home/wwwroot/
+      source: large-screen
+
+kind: pipeline
+type: kubernetes
+name: release_prod
+
+clone:
+  disable: true
+
+steps:
+  - <<: *clone
+
+  - <<: *build_release_prod_code
+
+  - <<: *deploy
+
+trigger:
+  branch:
+  - release/prod
+  event:
+  - push
